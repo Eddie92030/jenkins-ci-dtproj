@@ -12,7 +12,7 @@ pipeline {
         echo "${ProjectName}"
         echo "${buildNumber}"
         echo "${BuildJobName}"
-        powershell "curl.exe -v -u jenkins-user:A*69@%Y_kBwe75f http://localhost:8081/repository/msbuild-drop/${env.JOB_NAME}/${buildNumber}/${ProjectName}.ispac --output ./${ProjectName}.ispac"
+        powershell "curl.exe -v -u jenkins-user:A*69@%Y_kBwe75f http://localhost:8081/repository/msbuild-drop/${BuildJobName}/${buildNumber}/${ProjectName}.ispac --output ./${ProjectName}.ispac"
 
       }
     }
