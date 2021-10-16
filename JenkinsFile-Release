@@ -20,7 +20,9 @@ pipeline {
     stage('Deploy Ispac') {
       steps {
         echo "To Deploy Ispac"
-        powershell "ssisdeploy -s:./${ProjectName}.ispac -d:catalog;/SSISDB/${SSISFolderName};${DBServerName}"
+        echo "${SSISFolderName}"
+        echo "${DBServerName}"
+        powershell "ssisdeploy -s:./${ProjectName}.ispac -d:catalog;/SSISDB/${SSISFolderName};${DBServerName} -at:win"
       }
     }
 
