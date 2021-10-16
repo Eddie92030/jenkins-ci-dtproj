@@ -17,7 +17,7 @@ pipeline {
 
     stage('Build Ispac') {
       steps {
-        bat "\"${tool name: 'MSBuild', type: 'msbuild'}\\MSBuild.exe\" /p:Configuration=Release"
+        powershell "gci *.dtproj -rec | Foreach-Object { ssisbuild -p:$_.FullName -c:Release }"
         powershell 'gci $ENV:WORKSPACE -rec'
       }
     }
