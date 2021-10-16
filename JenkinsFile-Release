@@ -22,7 +22,7 @@ pipeline {
         echo "To Deploy Ispac"
         echo "${SSISFolderName}"
         echo "${DBServerName}"
-        powershell "ssisdeploy -s:./${ProjectName}.ispac -d:catalog;/SSISDB/${SSISFolderName};${DBServerName} -at:win"
+        powershell "ssisdeploy -s:./${ProjectName}.ispac -d:catalog;/SSISDB/${SSISFolderName};\"${DBServerName}\" -at:win"
       }
     }
 
