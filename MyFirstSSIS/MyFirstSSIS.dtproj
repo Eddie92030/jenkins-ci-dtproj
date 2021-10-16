@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">HOST</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA03NANjI1Y02vy5kd7FFK9wAAAAACAAAAAAAQZgAAAAEAACAAAAC1J01H3+K5edQ7o7mizavw3qCzP/KakBEvP9c9wUHN6QAAAAAOgAAAAAIAACAAAAAbVoRhGd1Csj+NuPBewCROwVM9cxubHhKPpAjkuFRDpJAAAADQrqWyveFAeOQ4eIlD1zXFVHe3PjiNwHPejL3FEl+FjuL7hXifPyt2m+/2MdWXCLqt+HjgX3+/bd3fZNxGW4Dr3/nY5CAYQk5HfJxDrYNsZkHVQRU7ewoJtpB02SSIzMLARLwMewQc/2o+xQ1WnsiER7fOhlaCtliwNILSv5sxxoE3n2hrGRUclJ6zqTWa0CBAAAAAZWenYg/8y6AnWsTScpjTWCuZwtvw9JNSD3O+fLQ8jjle/PdI5HYmruRHaST3rDyRqOUkKDAOYsxj1aV1DPw4nA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA03NANjI1Y02vy5kd7FFK9wAAAAACAAAAAAAQZgAAAAEAACAAAADJZ0Qj9kkWa5sK1nTc/ZRJMhOyW6MjRUsMtKRoh4mV/QAAAAAOgAAAAAIAACAAAADfcj4E82kicaBkgye4i4HmCAMPrGqyX7szJH+CPajR25AAAABbeTw+wZ1Ws0+4LDaH/wMiPbmJby/tiY8cEeGUblFKG4ac/qUQt/Gj7mhxjbAQroY2dYcPO6KrlohcfcQKIaBcYBsKaAQ69rt72xDN5j7r9/3KDG67R3i3fO8AtcTdcajSYKSFh+8cQQotNeVD0nwGOzWqlHP1USxkUOh/TXUGVcwr5WM3FNh+gNPWWHB+/NFAAAAA/UurK6LckvMNGCOmn5/xU3M48SzkJs+8c7H+UiVA2DcDk1nDx3kazGTWZgXkCt/cHQwLwMkf/WeM6qqkykVTsQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -63,6 +63,30 @@
   <Configurations>
     <Configuration>
       <Name>Development</Name>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <ConnectionMappings />
+        <ConnectionProviderMappings />
+        <ConnectionSecurityMappings />
+        <DatabaseStorageLocations />
+        <TargetServerVersion>SQLServer2019</TargetServerVersion>
+        <AzureMode>false</AzureMode>
+        <LinkedAzureTenantId />
+        <LinkedAzureAccountId />
+        <LinkedAzureSSISIR />
+        <LinkedAzureStorage />
+        <RemoteExecutionFolder />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2021-10-16T15:41:22.4896888Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Release</Name>
       <Options>
         <OutputPath>bin</OutputPath>
         <ConnectionMappings />
