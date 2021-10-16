@@ -17,7 +17,7 @@ pipeline {
 
     stage('Build Ispac') {
       steps {
-        powershell "gci *.dtproj -rec | Foreach-Object { ssisbuild -p:\$_.FullName -c:Release }"
+        powershell "gci | where {(\$_.psiscontainer)} | foreach-object { gci -Path $_.Name *.dtproj | foreach-Object { ssisbuild -p:\$_.FullName -c:Release } }"
         powershell 'gci $ENV:WORKSPACE -rec'
       }
     }
